@@ -1,0 +1,40 @@
+package com.example;
+
+/**
+ * Clase de ejemplo para la práctica de Jenkins.
+ * Contiene operaciones matemáticas básicas para que el alumnado
+ * pueda ver cómo Jenkins compila y ejecuta las pruebas automáticamente.
+ */
+public class Calculadora {
+
+    public int sumar(int a, int b) {
+        return a + b;
+    }
+
+    public int restar(int a, int b) {
+        return a - b;
+    }
+
+    public int multiplicar(int a, int b) {
+        return a * b;
+    }
+
+    public double dividir(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("No se puede dividir entre cero");
+        }
+        return (double) a / b;
+    }
+
+    public boolean esPrimo(int numero) {
+        if (numero < 2) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

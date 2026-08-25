@@ -1,0 +1,16 @@
+
+# Maven
+target/
+
+# Visual Studio Code
+.vscode/
+
+# Java
+*.class
+
+# Archivos temporales
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
