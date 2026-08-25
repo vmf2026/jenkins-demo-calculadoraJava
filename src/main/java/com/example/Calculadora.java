@@ -1,9 +1,9 @@
 package com.example;
 
 /**
- * Clase de ejemplo para la práctica de Jenkins.
- * Contiene operaciones matemáticas básicas para que el alumnado
- * pueda ver cómo Jenkins compila y ejecuta las pruebas automáticamente.
+ * Clase de ejemplo para la practica de Jenkins.
+ * Contiene operaciones matematicas basicas para que el alumnado
+ * pueda ver como Jenkins compila y ejecuta las pruebas automaticamente.
  */
 public class Calculadora {
 
