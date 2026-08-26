@@ -1,10 +1,6 @@
 pipeline {
-    agent any
+    agent any  // Jenkins puede ejecutar este pipeline en cualquier nodo/agente disponible
 
-    tools {
-        maven 'Maven3'   // Nombre configurado en Jenkins > Global Tool Configuration
-        jdk 'JDK17'      // Nombre configurado en Jenkins > Global Tool Configuration
-    }
 
     stages {
 
@@ -52,10 +48,10 @@ pipeline {
 
     post {
         success {
-            echo '✅ Pipeline completado con éxito.'
+            echo 'OK. Pipeline completado con éxito.'
         }
         failure {
-            echo '❌ El pipeline ha fallado. Revisa los logs de la fase correspondiente.'
+            echo 'KO. El pipeline ha fallado. Revisa los logs de la fase correspondiente.'
         }
     }
 }
