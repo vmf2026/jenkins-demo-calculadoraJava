@@ -8,7 +8,8 @@ package com.example;
 public class Calculadora {
 
     public int sumar(int a, int b) {
-        return a - b; // Prueba para provocar un test fallido
+        return a + b; 
+        // return a - b;  //Prueba para provocar un test fallido
     }
 
     public int restar(int a, int b) {
